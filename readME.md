@@ -8,6 +8,12 @@ Compile the memory allocator using the following command:
 gcc -o memalloc.so -fPIC -shared -Wno-deprecated-declarations memalloc.c
 ```
 
+Compile the memory allocator with the stress test:
+
+```base
+gcc -o stress_test stress_test.c malloc.c -pthread
+```
+
 ## Usage
  
 Assuming you are using a Unix-type operating system, follow these steps to use the custom memory allocator when running commands:
